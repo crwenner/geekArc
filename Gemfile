@@ -21,4 +21,8 @@ group :test do
   gem "database_cleaner"
 end
 
+group :development do
+  gem 'pry'
+end
+
 gem "sorcery"
