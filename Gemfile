@@ -5,6 +5,8 @@ gem 'rails', '3.2.7'
 gem 'sqlite3'
 
 gem 'json'
+gem 'redcarpet'
+gem 'sorcery'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -24,5 +26,3 @@ end
 group :development do
   gem 'pry'
 end
-
-gem "sorcery"
