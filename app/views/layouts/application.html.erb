@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GeekArc</title>
+<html>
+
+  <head>
+    <title> Geek Architect </title>
+
+    <link rel="stylesheet" href="/assets/new-styles.css">
+    <link rel="stylesheet" href="/assets/normalize.css">
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body>
+      <div id="header-background">
+        <header class="wrapper">
+
+          <a id="logo" href="index.html">
+            <img src="assets/geekar.png" alt="logo">
+          </a>
+
+          <nav role="navigation">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Portfolio</a></li>
+            </ul>
+          </nav>
+      </div>
+        </header> 
+      <div id="black">
+        <div id="repeating-background">
+          <div id="content-wrapper" class="wrapper">
+            <div id="content">
 
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, :id => "flash_#{name}" %>
   <% end %>
 
   <%= yield %>
-
-</body>
+			</div> <!-- end of repeating-background -->
+          </div> <!-- end of content -->
+        </div> <!-- end of  -->
+      <footer class="wrapper">
+        <p>2012 Chris Wenner -- Geek Architect</p>
+      </footer>
+    </div><!-- end black -->
+  </body>
 </html>
