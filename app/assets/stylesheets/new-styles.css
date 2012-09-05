@@ -1,3 +1,7 @@
+html,body{
+  height:100%;
+}
+
 @font-face{
   font-family: myFirstFont;
   src: url('<%= asset_path('Sansation_Light.ttf') %>');
@@ -60,10 +64,6 @@ nav ul li a{
   color: #122d4a;
 }
 
-#black{
-  background-color: black;
-}
-
 #content{
   min-height: 300px;
   margin-left:10px;
@@ -80,10 +80,9 @@ nav ul li a{
   margin: 0em 0;
 }
 
-footer{
+#bottom{
+  margin: 0 auto;
   width: 960px;
-  color:white;
-  text-align: center;
   min-height:43px; 
   background-image:url('../assets/gradient-alt.png');
   background-repeat:repeat-x;
