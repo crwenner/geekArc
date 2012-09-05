@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <html>
-
   <head>
     <title> Geek Architect </title>
-
-    <link rel="stylesheet" href="/assets/new-styles.css">
-    <link rel="stylesheet" href="/assets/normalize.css">
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
+  </head>
   <body>
       <div id="header-background">
         <header class="wrapper">
 
-          <a id="logo" href="index.html">
+          <%= link_to root_path, :id => 'logo' do %>
             <img src="assets/geekar.png" alt="logo">
-          </a>
+          <% end %>
 
           <nav role="navigation">
             <ul>
-              <li><a href="#">Blog</a></li>
+              <li><%= link_to 'Blog', posts_path %></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Portfolio</a></li>

@@ -1,10 +1,10 @@
-html,body{
-  height:100%;
+body{
+  background-color:black;
 }
 
 @font-face{
   font-family: myFirstFont;
-  src: url('<%= asset_path('Sansation_Light.ttf') %>');
+  src: url('../assets/Sansation_Light.ttf');
 }
 
 #header-background{
