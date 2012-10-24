@@ -15,6 +15,7 @@
   <%= markdown @post.content %>
 </p>
 
-
-<%= link_to 'Edit', edit_blog_path(@post) %> |
+<% if logged_in? %>
+  <%= link_to 'Edit', edit_blog_path(@post) %> |
+<% end %>
 <%= link_to 'Back', blog_index_path %>
