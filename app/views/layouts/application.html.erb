@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 <html>
-<html>
-  <head>
-    <title> Geek Architect </title>
+<head>
+	<title> Geek Architect </title>
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  </head>
-  <body>
-      <div id="header-background">
-        <header class="wrapper">
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+  <div id='main-container'>
+  <div id='neat-display'>
+    <h1>
+       <span>GEEK</span>
+       <span>Architect</span>
+     </h1>
+   </div><!-- end neat-display -->
 
-          <%= link_to root_path, :id => 'logo' do %>
-            <img src="/assets/geekar.png" alt="logo">
-          <% end %>
-
-          <nav role="navigation">
-            <ul>
-              <li><%= link_to 'Blog', blog_index_path %></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Portfolio</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div><!-- end header-background -->
-        
-        <div id="repeating-background">
-          <div id="content-wrapper" class="wrapper">
-            <div id="content">
-
-              <% flash.each do |name, msg| %>
-                <%= content_tag :div, msg, :id => "flash_#{name}" %>
-              <% end %>
-
-              <%= yield %>
-
-			       </div> <!-- end of content -->
-          </div> <!-- end of content-wrapper -->
-        </div> <!-- end of  repeating-background-->
-      <div id="bottom" class="wrapper">
-        <!-- contains bottom gradient -->
-      </div><!-- end bottom -->
-
-
-      <footer>
-        <p>2012 Chris Wenner -- Geek Architect</p>
-      </footer>
-
-  </body>
+  </div>
+</body>
 </html>
