@@ -26,22 +26,19 @@
 <div id='blog-space'>
   <h1 class='words'>Recent Posts</h1>
 </div><!-- end blog space -->
-    
 
 <% @posts.each do |post| %>
 <div id='mini-blog'>
   <h1><%= link_to post.title, blog_path(post) %></h1>
   <%= post.date %><br>
-  <%= post.content %><br>
   </div><!-- end mini-blog -->
 <% end %>
-
-
-
+    
 <div id='footer'>
   <ul>
     <a href='http://www.facebook.com'><li class='facebook'>f</li></a>
     <a href='http://www.twitter.com'><li class='twitter'>t</li></a>
+    <a href='http://www.seedcoworking.com'><li class='seed'>seed</li></a>
       <li class='me'>Created by Chris Wenner</li>
   </ul>
 </div><!-- end footer  -->
