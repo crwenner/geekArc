@@ -1,24 +1,28 @@
 .words{
+  font-size:33px;
+  text-align:center;
   padding:0px;
-  margin:5px;
+  margin:5px auto 10px;
   color:rgba(58, 83, 128, 0.5);
   text-shadow: 0px 1px 5px white,0px 0px 0px black;
   font-family:'Orbitron';
 }
 
 .welcome{
-  min-height:300px;
-  background:url('../assets/background-repeat1.png');
-  //background:white;
+  //min-height:300px;
+  //background:url('../assets/background-repeat1.png');
+  background:white;
   padding:5px 5px 5px 5px;
   margin:10px 0px 10px 0px;
 }
 
 #wel-con{
-  width:590px;
+  width:580px;
+  height:auto;
   float:left;
   margin-left:10px;
-  border-radius:0px 0px 0px 10px;
+  padding:5px 5px 5px 5px;
+  //border-radius:0px 0px 0px 10px;
 }
 
 #wel-con p{
@@ -37,10 +41,51 @@
 }
 
 #twitter-feed{
-  width:260px;
+  text-align:center;
+  width:270px;
   float:right;
   margin-right:10px;
   border-radius:0px 10px 0px 0px;
 }
 
+#footer{
+  float:left;
+  width:580px;
+  border-radius:0px 0px 0px 10px;
+  margin:0px 10px 10px 10px;
+  padding:5px 5px 5px 5px;
+  background:white;
+}
 
+#footer ul{
+  padding-left:10px;
+}
+
+#footer ul li{
+  padding:0px;
+  display:block;
+  display:inline;
+  margin-right:10px;
+}
+
+#footer ul li.facebook{
+  color:white;
+  font-weight:bold;
+  font-size:40px;
+  padding:0px 10px 0px 25px;
+  background-color:#24537F;
+  border-radius:10px;
+}
+
+#footer ul a{
+  text-decoration:none;
+}
+
+#footer ul li.twitter{
+  color:white;
+  font-weight:bold;
+  font-size:40px;
+  padding: 0px 25px 0px 10px;
+  background-color:#5CA1C0;
+  border-radius:10px;
+}

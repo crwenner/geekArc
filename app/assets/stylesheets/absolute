@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800|Erica+One|Molle:400italic|Orbitron|Bangers);
+
+html, body{
+  margin:0px;
+  padding:0px;
+}
+
+body{
+  background-image:url('../assets/background-repeat1.png');
+  background-repeat:repeat-xy;
+}
+
+#main-container{
+  height:auto;
+  width:900px;
+  margin:15px auto 15px;
+}
+
+#nav-bar{
+  max-width:516px;
+  float:left;
+  line-height:0px;
+  height:68px;
+}
+
+ul.nav{
+  padding:0px;
+  list-style:none;
+  font-family:'Open Sans';
+  font-size:35px;
+  text-decoration:none;
+}
+
+ul.nav li{
+  display:inline;
+  margin-left:40px;
+}
+
+ul.nav li a{
+  color:rgba(58, 83, 128, 0.5);
+  text-shadow: 0px 1px 5px white,0px 0px 0px black;
+  text-decoration:none;
+}
+
+ul.nav li a:hover{
+  text-decoration:none;
+  color:#24537f;
+}
+
+/*
+#content{
+  height:auto;
+  background-color:rgba(58, 83, 128, 0.2);
+  border-radius:0px 20px 0px 20px;
+  box-shadow:0px 8px 20px -9px black;
+  //position:absolute;
+  width:900px;
+  clear:both;
+  //margin-top:120px;
+}*/
+
+#footer{
+  width:371px;
+  text-align:center;
+  margin:auto;
+  color:white;
+}
+
+/*------------------- This is all for the logo ------------------ */
+
+#neat-display{
+  margin-top:15px;
+  margin-bottom:35px;
+  float:left;
+  min-width:384px;
+}
+
+#neat-display h1 {
+  font-family: 'Open Sans';
+  font-size: 50px;
+  margin:0 auto;
+}
+
+#neat-display h1 span {
+  height:auto;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  padding:0px 5px 0px 5px;
+}
+
+#neat-display h1 span:nth-child(odd) {
+  background:#5CA1C0;
+  color: #24537f;
+  position: relative;
+  -webkit-transform: skewY(13deg);
+  -ms-transform: skewY(13deg);
+  -moz-transform: skewY(13deg);
+  /*text-shadow: 0px -1px 2px white, -1px 2px 0px #1C3B5A;*/
+}
+
+#neat-display h1 span:nth-child(even) {
+  background: #24537f;
+  color: #5CA1C0;
+  z-index:2;
+  margin-left:-13px;
+  -webkit-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  /*text-shadow: -1px -1px 2px #5CA1C0, -1px 1px 0px black;*/
+}
+/*---------------------------- end logo ---------------------------*/
+
