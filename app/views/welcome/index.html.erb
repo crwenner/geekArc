@@ -24,8 +24,19 @@
 </div><!-- end twitter -->
 
 <div id='blog-space'>
-  
+  <h1 class='words'>Recent Posts</h1>
 </div><!-- end blog space -->
+    
+
+<% @posts.each do |post| %>
+<div id='mini-blog'>
+  <h1><%= link_to post.title, blog_path(post) %></h1>
+  <%= post.date %><br>
+  <%= post.content %><br>
+  </div><!-- end mini-blog -->
+<% end %>
+
+
 
 <div id='footer'>
   <ul>

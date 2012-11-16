@@ -23,6 +23,7 @@
   margin-left:10px;
   padding:5px 5px 5px 5px;
   //border-radius:0px 0px 0px 10px;
+  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
 }
 
 #wel-con p{
@@ -37,7 +38,6 @@
   color: #5CA1C0;
   font-size:30px;
   font-family:'Orbitron';
-  text-shadow:0px 2px 1px #24537F, 0px 4px 5px black;
 }
 
 #twitter-feed{
@@ -46,12 +46,14 @@
   float:right;
   margin-right:10px;
   border-radius:0px 10px 0px 0px;
+  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
 }
 
 #footer{
   float:left;
   width:580px;
   border-radius:0px 0px 0px 10px;
+  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
   margin:0px 10px 10px 10px;
   padding:5px 5px 5px 5px;
   background:white;
@@ -88,4 +90,29 @@
   padding: 0px 25px 0px 10px;
   background-color:#5CA1C0;
   border-radius:10px;
+}
+
+#blog-space{
+  float:left;
+  width:580px;
+  background:white;
+  padding:5px 5px 5px 5px;
+  margin:0px 10px 10px 10px;
+  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
+}
+
+#mini-blog{
+  float:left;
+  width:580px;
+  background:white;
+  padding:5px 5px 5px 5px;
+  margin:0px 10px 10px 10px;
+  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
+}
+
+#mini-blog h1,a{
+  text-decoration:none;
+  padding:0px;
+  margin:0px;
+
 }
