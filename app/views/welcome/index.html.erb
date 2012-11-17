@@ -7,8 +7,6 @@
 </div><!-- end wel-con -->
 
 <div id='twitter-feed' class='welcome'>
-<!-- <h2 class='words'>Tweet me yo!</h1>-->
-
   <a class="twitter-timeline" href="https://twitter.com/crwenner" data-widget-id="268528039028199424" width='270px' height='368px'>Tweets by @crwenner</a>
   <script>
     !function(d,s,id){
@@ -28,17 +26,23 @@
 </div><!-- end blog space -->
 
 <% @posts.each do |post| %>
-<div id='mini-blog'>
-  <h1><%= link_to post.title, blog_path(post) %></h1>
-  <%= post.date %><br>
-  </div><!-- end mini-blog -->
+<div id='mini-blog'> 
+  <div class="date-wrapper-container">
+    <div class="wrapper-container">
+      <%= post.date %>
+    </div><!-- wrapper-container -->
+  </div><!-- date-wrapper-container -->
+
+  <h3><%= link_to post.title, blog_path(post) %></h3>
+
+</div><!-- end mini-blog -->
 <% end %>
     
 <div id='footer'>
   <ul>
     <a href='http://www.facebook.com'><li class='facebook'>f</li></a>
     <a href='http://www.twitter.com'><li class='twitter'>t</li></a>
+    <li class='me'>Created by Chris Wenner</li>
     <a href='http://www.seedcoworking.com'><li class='seed'>seed</li></a>
-      <li class='me'>Created by Chris Wenner</li>
   </ul>
 </div><!-- end footer  -->

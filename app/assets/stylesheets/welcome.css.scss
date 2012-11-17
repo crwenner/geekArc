@@ -1,5 +1,5 @@
 .words{
-  font-size:33px;
+  font-size:40px;
   text-align:center;
   padding:0px;
   margin:5px auto 10px;
@@ -9,8 +9,6 @@
 }
 
 .welcome{
-  //min-height:300px;
-  //background:url('../assets/background-repeat1.png');
   background:white;
   padding:5px 5px 5px 5px;
   margin:10px 0px 10px 0px;
@@ -22,8 +20,8 @@
   float:left;
   margin-left:10px;
   padding:5px 5px 5px 5px;
-  //border-radius:0px 0px 0px 10px;
-  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
+  border-radius:10px 0px 0px 0px;
+  border-bottom:10px rgba(58, 83, 128, 0.7) solid;
 }
 
 #wel-con p{
@@ -45,15 +43,72 @@
   width:270px;
   float:right;
   margin-right:10px;
-  border-radius:0px 10px 0px 0px;
-  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
+  border-bottom:10px rgba(58, 83, 128, 0.7) solid;
 }
 
+#blog-space{
+  float:left;
+  width:590px;
+  background:white;
+  padding:5px 0px 0px 0px;
+  margin:0px 10px 10px 10px;
+  border-bottom:10px rgba(58, 83, 128, 0.7) solid;
+}
+
+#mini-blog{
+  text-align:center;
+  float:left;
+  width:590px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#5CA1C0));
+  border-bottom:10px #24537f solid;
+  margin:0px 10px 10px 10px;
+}
+
+#mini-blog h3{
+  font-family:'Open Sans';
+  font-size:35px;
+  text-decoration:none;
+  margin:30px auto;
+}
+
+#mini-blog a{
+  text-decoration:none;
+  color:#24537f;
+}
+
+#mini-blog a:hover{
+  text-shadow: 0px 0px 6px white,0px 1px 2px black;
+  color:white;
+}
+
+.date-wrapper-container {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.wrapper-container {
+  background-color:#24537f;
+  color:#5CA1C0;
+  font-weight:bold;
+  text-align: center;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg); 
+  position: relative;
+  padding: 11px 21px ;
+  left: -46px;
+  top: 16px;
+  width: 125px;
+}
+
+//----------I did it all for the footer ----------------
 #footer{
+  text-align:center;
   float:left;
   width:580px;
-  border-radius:0px 0px 0px 10px;
-  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
+  border-bottom:10px rgba(58, 83, 128, 0.7) solid;
   margin:0px 10px 10px 10px;
   padding:5px 5px 5px 5px;
   background:white;
@@ -61,6 +116,10 @@
 
 #footer ul{
   padding-left:10px;
+}
+
+#footer ul a{
+  text-decoration:none;
 }
 
 #footer ul li{
@@ -79,10 +138,6 @@
   border-radius:10px;
 }
 
-#footer ul a{
-  text-decoration:none;
-}
-
 #footer ul li.twitter{
   color:white;
   font-weight:bold;
@@ -92,35 +147,18 @@
   border-radius:10px;
 }
 
+#footer ul li.me{
+  color: #24537F;
+  font-size:15px;
+  padding-bottom:20px;
+  font-family:'Orbitron';
+}
+
 #footer ul li.seed{
   color:white;
   font-style:italic;
   font-size:40px;
-  padding: 0px 4px 6px 0px;
+  padding: 5px 11px 9px 1px;
   background-color:#95BE49;
-  border-radius:10px;
-}
-
-#blog-space{
-  float:left;
-  width:590px;
-  background:white;
-  padding:5px 0px 0px 0px;
-  margin:0px 10px 10px 10px;
-  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
-}
-
-#mini-blog{
-  float:left;
-  width:590px;
-  background:white;
-  border-bottom:10px rgba(58, 83, 128, 0.2) solid;
-  margin:-10px 10px 10px 10px;
-}
-
-#mini-blog h1,a{
-  text-decoration:none;
-  padding:5px;
-  margin:0px;
-
+  border-radius:50px 50px 58px 57px/45px 16px 55px 25px;
 }

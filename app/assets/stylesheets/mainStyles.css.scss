@@ -16,6 +16,16 @@ body{
   margin:15px auto 15px;
 }
 
+#content{
+  width:900px;
+  display:inline-block;
+  background-color:rgba(58, 83, 128, 0.2);
+  border-radius:20px 0px 20px 0px;
+  box-shadow:0px 4px 5px -2px black;
+}
+
+/*------------------- start nav ------------------ */
+
 #nav-bar{
   max-width:516px;
   float:left;
@@ -45,14 +55,6 @@ ul.nav li a{
 ul.nav li a:hover{
   text-decoration:none;
   color:#24537F;
-}
-
-#content{
-  width:900px;
-  display:inline-block;
-  background-color:rgba(58, 83, 128, 0.2);
-  border-radius:0px 20px 0px 20px;
-  box-shadow:0px 4px 5px -2px black;
 }
 
 /*------------------- This is all for the logo ------------------ */
@@ -85,7 +87,6 @@ ul.nav li a:hover{
   -webkit-transform: skewY(13deg);
   -ms-transform: skewY(13deg);
   -moz-transform: skewY(13deg);
-  /*text-shadow: 0px -1px 2px white, -1px 2px 0px #1C3B5A;*/
 }
 
 #neat-display h1 span:nth-child(even) {
@@ -96,7 +97,5 @@ ul.nav li a:hover{
   -webkit-transform: skewY(-7deg);
   -ms-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
-  /*text-shadow: -1px -1px 2px #5CA1C0, -1px 1px 0px black;*/
 }
 /*---------------------------- end logo ---------------------------*/
-
