@@ -1,31 +1,44 @@
-<h1>Listing posts</h1>
+<div id='wel-con' class='welcome'>
+  <h1 class='words'>Blog Posts!</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Date</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <% if logged_in? %>
+    <%= link_to 'New Post', new_blog_path %>
+  <% end %>
+</div><!-- end wel-con -->
+
+<div id='side-feed' class='welcome'>
+  <h1 class='words'>titles</h1>
+  <% @posts.each do |post| %>
+    <%= link_to post.title, blog_path(post) %><br>
+    <%= post.date %><br><br>
+  <% end %>
+</div><!-- end side -->
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.date %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', blog_path(post) %></td>
+<div id='blog'> 
+  <div class="date-wrapper-container">
+    <div class="wrapper-container">
+      <%= post.date %>
+    </div><!-- wrapper-container -->
+  </div><!-- date-wrapper-container -->
+
+  <h3><%= link_to post.title, blog_path(post) %></h3>
+
+  <%= post.content %><br>
+
     <% if logged_in? %>
-      <td><%= link_to 'Edit', edit_blog_path(post) %></td>
-      <td><%= link_to 'Destroy', blog_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <%= link_to 'Edit', edit_blog_path(post) %>
+      <%= link_to 'Destroy', blog_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
-  </tr>
-<% end %>
-</table>
 
-<br />
-
-<% if logged_in? %>
-  <%= link_to 'New Post', new_blog_path %>
+</div><!-- end mini-blog -->
 <% end %>
+    
+<div id='footer'>
+  <ul>
+    <a href='http://www.facebook.com'><li class='facebook'>f</li></a>
+    <a href='http://www.twitter.com'><li class='twitter'>t</li></a>
+    <li class='me'>Created by Chris Wenner</li>
+    <a href='http://www.seedcoworking.com'><li class='seed'>seed</li></a>
+  </ul>
+</div><!-- end footer  -->

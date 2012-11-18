@@ -3,7 +3,8 @@ class WelcomeController < ApplicationController
   end
 
   def index
-    @posts = Post.all
+  	#limits the number of posts to 10 blogs posts showing
+    @posts = Post.unscoped.all(:select => [:id, :date, :title], :order => "updated_at DESC").first(10)
 
     respond_to do |format|
       format.html # index.html.erb

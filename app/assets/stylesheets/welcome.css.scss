@@ -8,6 +8,12 @@
   font-family:'Orbitron';
 }
 
+#word2{
+  color: #24537f;
+  font-size:30px;
+  font-family:'Orbitron';
+}
+
 .welcome{
   background:white;
   padding:5px 5px 5px 5px;
@@ -38,12 +44,18 @@
   font-family:'Orbitron';
 }
 
-#twitter-feed{
+#side-feed{
   text-align:center;
   width:270px;
   float:right;
   margin-right:10px;
   border-bottom:10px rgba(58, 83, 128, 0.7) solid;
+}
+
+#side2{
+  margin-top:20px;
+  width:270px;
+  float:right;
 }
 
 #blog-space{
@@ -68,7 +80,7 @@
   font-family:'Open Sans';
   font-size:35px;
   text-decoration:none;
-  margin:30px auto;
+  margin:30px 20px;
 }
 
 #mini-blog a{
