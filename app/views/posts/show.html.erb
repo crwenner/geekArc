@@ -1,21 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+<div id='blog'>
+  <h3><%= @post.title %></h3>
 
-<p>
-  <b>Date:</b>
   <%= @post.date %>
-</p>
 
-<p>
-  <b>Content:</b>
   <%= @post.content %>
-</p>
 
 <% if logged_in? %>
   <%= link_to 'Edit', edit_blog_path(@post) %> |
 <% end %>
 <%= link_to 'Back', blog_index_path %>
+</div><!-- end -->
