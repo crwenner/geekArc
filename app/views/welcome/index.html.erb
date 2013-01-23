@@ -35,10 +35,13 @@
   <div class="date-wrapper-container">
     <div class="wrapper-container">
       <%= post.date %>
+
     </div><!-- wrapper-container -->
   </div><!-- date-wrapper-container -->
 
   <h3><%= link_to post.title, blog_path(post) %></h3>
+
+  <%= post.content %>
 
 </div><!-- end mini-blog -->
 <% end %>
